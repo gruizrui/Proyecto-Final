@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylejuego.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina la Película Reglas</title>
+    <nav>
+      <header>
+        <h1> REGLAS</h1>
+    </header>
+    <a href="Juego.html">Juego</a>
+  </nav>
+</head>
+<body onclick="PlayAudio()">
+    <div id="game-container">
+        <div class="container">
+            <h1>Reglas del Juego</h1>
+            <ol>
+                <li>El objetivo del juego es adivinar la película correcta de entre las 6 opciones disponibles con la menor cantidad de intentos posibles.</li>
+                <li>El jugador tiene 3 intentos para adivinar la película correcta.</li>
+                <li>En cada intento, el jugador puede hacer una adivinanza sobre la película seleccionada.</li>
+                <li>Después de cada adivinanza, proporciona al jugador una pista o una respuesta simple como "correcto" o "incorrecto". No reveles la respuesta correcta.</li>
+                <li>Si el jugador está teniendo dificultades, puedes proporcionar pistas adicionales después de cada intento.</li>
+                <li>El juego termina cuando el jugador adivina correctamente la película o agota sus 3 intentos.</li>
+            </ol>
+            <p>¡Diviértete jugando y adivinando las películas!</p>
+        </div>
+      <h1>Adivina la Película</h1>
+        <section id="Peliculas">
+
+            <div class="serie">
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/79194981293eabf6620ece96eb5a9c1fffa04d3374ae12986e0748800b37b9cf.jpg" width="125px" height="150">
+            </div>
+            <div class="serie">
+                <img src="https://pics.filmaffinity.com/meg_2_the_trench-110281073-mmed.jpg " width="125px" height="150">
+            </div>
+            <div class="serie">
+                <img src="https://upload.wikimedia.org/wikipedia/en/2/23/Deadpool_%282016_poster%29.png" width="125px" height="150">
+            </div>
+            <div class="serie">
+                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1A9AAA287F83A36DFD8959B13C84CC77F045D21DFE7DCBB884593ADB531E6D74/scale?width=506&aspectRatio=2.00&format=jpeg" width="125px" height="150">
+            </div>
+            <div class="serie">
+                <img src="https://as01.epimg.net/epik/imagenes/2019/03/02/portada/1551544450_265789_1551544581_noticia_normal.jpg" width="125px" height="150">
+            </div>
+            <div class="serie">
+                <img src="https://pics.filmaffinity.com/Campeones-981723931-large.jpg" width="125px" height="150">
+            </div>
+
+            <audio id="musica1" loop>
+                <source src="img/NuvoleBianche.mp3" type="audio/mpeg">
+                   </audio> 
+                
+                  <script>
+                    function PlayAudio() {
+                      document.getElementById("musica1").play();
+                    }
+                  </script>
+        </section>
+        </html>

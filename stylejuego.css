@@ -1,0 +1,143 @@
+/*
+ATRIBUTOS DEL CSS RESUMEN
+
+font-family: Define la familia de fuentes para el texto en el cuerpo.
+background-color: Establece el color de fondo.
+margin: Agrega los márgenes alrededor del cuerpo.
+padding: Añade relleno interno.
+border: Agrega un borde alrededor del encabezado.
+text-align: Centra el texto.
+color: Define el color del texto.
+font-size: Establece el tamaño de la fuente.
+
+footer a:hover {
+  text-decoration: underline;
+}                              --->Agrega subrayado a los enlaces cuando el ratón pasa sobre ellos.    
+
+display: Define cómo se mostrará el elemento.
+width: Establece el ancho del elemento.
+height: Establece la altura del elemento.
+
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(210, 210, 210);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #E50914; 
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  border: 18px solid #111;
+}
+
+h6    {
+      background-color: black; 
+      color: red;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+
+nav {
+  background-color: #111; 
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+
+nav a:hover {
+  color: #E50914;
+}
+
+
+section {
+  padding: 20px;
+  background-color:#fff; 
+  border: 1px solid red; 
+  margin: 20px;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #111; 
+  color: white;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: underline;
+
+}
+
+.serie {
+      display: inline-block;
+      width: 14.8%; 
+      margin: 10px; 
+  }
+
+  .menu {
+      width: 1750px;
+      height: 5px;
+      background-color: red; 
+  }
+
+  .menu2 {
+      width: 50px;
+      height: 5px;
+      background-color: red; 
+  }
+
+  h5 {
+      text-align: center;
+  }
+
+  .disco-box{
+      display: inline-block;
+      margin: 20vh;
+      width: 10vw;
+      height: 60vh;
+    }
+
+    ol {
+      text-align: left;
+  }
+  
+  p {
+      margin-top: 20px;
+  }
+
+
+  h3 {
+    background-color: red; 
+    text-align: center;
+    padding: 10px 0;
+  }

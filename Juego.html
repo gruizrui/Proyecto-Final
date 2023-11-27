@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--
+    <link rel="stylesheet" href="stylejuego.css">: Enlaza la hoja de estilo externa llamada "stylejuego.css" al documento HTML para aplicar estilos.
+  -->
+    <link rel="stylesheet" href="stylejuego.css">
+ <!--
+   Configura la vista en dispositivos móviles ajustando el ancho al ancho del dispositivo y estableciendo el nivel de escala inicial a 1.
+  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+     Define el título del documento que aparecerá en la pestaña del navegador. 
+    -->
+    <title>Adivina la Película</title>
+    <!--
+      Elemento de navegación que contiene una barra de navegación con enlaces a diferentes secciones del juego.
+    -->
+    <nav>
+      <header>
+        <h1> Juego de Netflix</h1>
+    </header>
+    <a href="proyecto.html">Inicio</a>
+    <a href="Inicio.html">Peliculas</a>
+    <a href="Series.html">Series</a>
+    <a href="Sugerencias.html">Sugerencias</a>
+    <a href="Imagenes.html">Imágenes Interactivas</a>
+    <a href="Juego.html">Juego</a>
+  </nav>
+</head>
+    <!--
+      Contiene el contenido principal del documento. El evento onclick activará la función PlayAudio() cuando se haga clic en cualquier parte del cuerpo.
+    -->
+<body onclick="PlayAudio()">
+    <div id="game-container">
+      <!-- Encabezado principal del juego.-->
+      <h1>Adivina la Película</h1>
+      <div class="menu"></div>
+     <nav>
+      <a href="Reglas.html">Reglas</a>
+     </nav>
+     <div class="menu"></div>
+    
+    <!-- Agrega un elemento para mostrar la pista -->
+     <p id="hint" class="hint"></p>
+     <!-- Agrega un botón de ayuda -->
+<button onclick="getHint()">Obtener pista</button>
+
+<!-- <section id="Peliculas">: Sección que contiene imágenes de películas.
+
+Diversos elementos <div class="serie">: Cada uno contiene la imagen de una película con un enlace. -->
+
+        <section id="Peliculas">
+            
+            <div class="serie">
+                <img src="https://m.media-amazon.com/images/S/pv-target-images/79194981293eabf6620ece96eb5a9c1fffa04d3374ae12986e0748800b37b9cf.jpg" width="125px" height="150">
+            </div>
+            <div class="serie">
+                <img src="https://pics.filmaffinity.com/meg_2_the_trench-110281073-mmed.jpg " width="125px" height="150">
+            </div>
+            <div class="serie">
+                <img src="https://upload.wikimedia.org/wikipedia/en/2/23/Deadpool_%282016_poster%29.png" width="125px" height="150">
+            </div>
+            <div class="serie">
+                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1A9AAA287F83A36DFD8959B13C84CC77F045D21DFE7DCBB884593ADB531E6D74/scale?width=506&aspectRatio=2.00&format=jpeg" width="125px" height="150">
+            </div>
+            <div class="serie">
+                <img src="https://as01.epimg.net/epik/imagenes/2019/03/02/portada/1551544450_265789_1551544581_noticia_normal.jpg" width="125px" height="150">
+            </div>
+            <div class="serie">
+                <img src="https://pics.filmaffinity.com/Campeones-981723931-large.jpg" width="125px" height="150">
+            </div>
+        </section>
+        <h5>
+      <input type="text" id="guess-input" placeholder="Ingresa tu respuesta">
+      <!--Un botón de verificación-->
+      <button onclick="checkGuess()">Verificar</button>
+      <p id="result"></p>
+      <!--Un botón para pasar a la siguiente pelicula-->
+      <button onclick="nextMovie()">Siguiente Película</button>
+    </h5>
+    </div>
+
+    <style>
+      #cronometro {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px;
+      }
+    </style>
+
+<!--Un elemento div que muestra un cronómetro con un tiempo restante.-->
+
+    <div id="cronometro">Tiempo restante: <span id="tiempo">20</span> segundos</div>
+
+    <!--Incluye un script externo llamado "Swiper.js"(enlace al juego, enlaza el js al html)-->
+    <script src="Swiper.js"></script>
+
+    <!--Define un elemento de audio con la ID "musica1" que se reproduce en bucle. Contiene una fuente de audio en formato MP3.-->
+   <audio id="musica1" loop>
+<source src="img/NuvoleBianche.mp3" type="audio/mpeg">
+   </audio> 
+  <script>
+    function PlayAudio() {
+      document.getElementById("musica1").play();
+    }
+  </script>
+
+  </body>
+  </html>
